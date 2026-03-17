@@ -164,23 +164,21 @@ int Wektor::removeFirst(int value)
 
 int Wektor::removeAll(int value)
 {
-    int removedCount = 0;
-    for (int i = 0; i < currentSize; )
+    int writeIndex = 0;
+    int initialSize = currentSize;
+
+    for (int readIndex = 0; readIndex < initialSize; readIndex++)
     {
-        if (vector[ i ] == value)
+        if (vector[ readIndex ] != value)
         {
-            for (int j = i; j < currentSize - 1; j++)
-            {
-                vector[ j ] = vector[ j + 1 ];
-            }
-            currentSize--;
-            removedCount++;
-        }
-        else
-        {
-            i++;
+            vector[ writeIndex ] = vector[ readIndex ];
+            writeIndex++;
         }
     }
+
+    int removedCount = currentSize - writeIndex;
+    currentSize = writeIndex;
+
     return removedCount;
 }
 
@@ -338,7 +336,7 @@ void Wektor::longestNonDecreasingSubarray()
         }
     }
 
-    if (currentLength > maxLength)
+    if (currentLength >= maxLength)
     {
         maxLength = currentLength;
         maxStart = currentStart;
