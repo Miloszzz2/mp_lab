@@ -459,21 +459,19 @@ Wektor menu()
             break;
         }
         case 10: {
-            Wektor kopiaD = wektor;
             std::cout << "Przed usunięciem duplikatów:" << std::endl;
-            std::cout << kopiaD;
-            kopiaD.removeDuplicatesOn3();
+            std::cout << wektor;
+            wektor.removeDuplicatesOn3();
             std::cout << "Po usunięciu duplikatów O(n³):" << std::endl;
-            std::cout << kopiaD;
+            std::cout << wektor;
             break;
         }
         case 11: {
-            Wektor kopiaD = wektor;
             std::cout << "Przed usunięciem duplikatów:" << std::endl;
-            std::cout << kopiaD;
-            kopiaD.removeDuplicatesOn2();
+            std::cout << wektor;
+            wektor.removeDuplicatesOn2();
             std::cout << "Po usunięciu duplikatów O(n²):" << std::endl;
-            std::cout << kopiaD;
+            std::cout << wektor;
             break;
         }
         case 12: {
