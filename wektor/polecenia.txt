@@ -1,0 +1,34 @@
+a. Proszę zaimplementować w klasie wektor konstruktor i
+przypisanie kopiujące lub wyłączyć opcję kopiowania dla tej klasy.
+
+b. Wstawianie zadanego elementu w momencie, kiedy wektor nie jest
+zapełniony i w momencie kiedy jest. W tym ostatnim przypadku
+proszę zrobić tak, by powiększać wektor o procent aktualnego
+rozmiaru a nie tylko o jeden.
+
+c. Usuwanie z tablicy zadanych elementów (zarówno pierwszego
+wystąpienia jak i wszystkich wystąpień)
+
+d. Sprawdzanie porządku w tablicy (niemalejący, nierosnący,
+stała wartość).
+
+e. Wyznaczanie elementów min i max (Czy możemy to
+zrealizować za pomocą pętli for-each?)
+
+f. Obliczanie wartości wielomianu stopnia n dla zadanego x
+(Horner).
+
+g. Usuwanie duplikatów, różne algorytmy o złożonościach O(n3) i
+O(n2)
+
+h. Wyznaczanie najdłuższej podtablicy niemalejącej.
+
+
+Złożoność czasowa metody Hornera:
+Złożoność czasowa podejścia naiwnego wynosi O(n2), jeśli użyjemy
+prostej pętli do obliczenia xn .
+Złożoność czasową możemy poprawić do O(n⋅log2 (n)), jeśli
+zastosujemy rekursję polegającą na podzieleniu problemu na podproblemy
+o rozmiarze n/2 , czyli będziemy wywoływać iloczyn tej metody dla
+x do potęgi n/2 .
+Metoda Hornera do oceny wielomianu ma złożoność czasową O(n)
